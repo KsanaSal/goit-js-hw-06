@@ -6,9 +6,11 @@ const ingredients = [
     "Herbs",
     "Condiments",
 ];
-const newLi = ingredients.map((el) => {
+
+const newList = ingredients.map((el) => {
     const createLi = document.createElement("li");
-    createLi.innerText = el;
+    createLi.textContent = el;
+    createLi.classList.add("item");
     return createLi;
 });
-document.querySelector("#ingredients").append(...newLi);
+document.querySelector("#ingredients").append(...newList);
