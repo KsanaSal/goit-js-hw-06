@@ -25,4 +25,3 @@ const newLi = images
     })
     .join("");
 gallery.insertAdjacentHTML("afterbegin", newLi);
-console.log(newLi);
